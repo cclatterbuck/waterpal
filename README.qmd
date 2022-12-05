@@ -46,7 +46,7 @@ water_pal("cwqmc")
 water_pal("cwqmcdark")
 ```
 
-```{r, volcano}
+```{r, volcano, fig.height = 4}
 pal <- water_pal("logogradient", 25, type = "continuous")
 image(volcano, col = pal)
 ```
@@ -74,7 +74,7 @@ water_pal("tribalheader")
 water_pal("datasalmon")
 ```
 
-```{r, salmon-plot}
+```{r, salmon-plot, fig.height = 3}
 library("ggplot2")
 library("palmerpenguins")
 ggplot(penguins, aes(factor(species), fill=factor(sex))) +  geom_bar() +
