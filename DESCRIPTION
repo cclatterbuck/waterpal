@@ -1,0 +1,14 @@
+Package: waterpal
+Title: A Water Boards Palette Generator
+Description: Palettes generated mostly from art and iconography from the California State Water Resources Control Board, USA. Code from Ram Karthik's wesanderson package. 
+Date: 2022-12-02
+Version: 0.1.0
+Authors@R: person("Clatterbuck", "Corey", role = c("aut", "cre"), email = "cclatterbuck@ucdavis.edu", comment = c(ORCID = "0000-0003-1351-8565"))
+Depends: R (>= 3.0)
+License: MIT + file LICENSE
+LazyData: true
+Suggests: ggplot2
+URL: https://github.com/cclatterbuck/waterpal
+BugReports: https://github.com/cclatterbuck/waterpal/issues
+RoxygenNote: 7.2.2
+Encoding: UTF-8

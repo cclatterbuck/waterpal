@@ -1,0 +1,91 @@
+---
+title: "README"
+format: gfm
+editor: visual
+---
+
+<!-- README.md is generated from README.qmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "pal_images/",
+  fig.height = 1
+)
+```
+
+# waterpal: palettes for the California Water Boards
+
+These are color palettes based on art and iconography from the California State Water Resources Control Board, USA. Code from [Karthik](http://www.github.com/karthik)'s wesanderson package. Palettes were generated using mycolorpicker and mycolor.image.
+
+**Contributions**: I welcome contributions to this package. Some potential contributions could include: additional palettes, edits to current palettes, additional examples of potential use, or examples where the palettes have been used in presentations or publications. For the GitHub-savvy, send a pull request with your edits. If you want to contribute but are unsure how, send me an email (or Teams message if within the Water Boards) and we can make it happen.
+
+## Installation
+
+```{r}
+devtools::install_github("cclatterbuck/waterpal")
+```
+
+## Palette names
+
+```{r, palettes_dummy}
+library(waterpal)
+# See all palettes
+names(water_palettes)
+```
+
+## View & use palettes
+
+### Water Boards blues
+
+```{r, blues}
+water_pal("logogradient") ## first color is the blue of the WB logo
+water_pal("bardo")
+water_pal("cwqmc")
+water_pal("cwqmcdark")
+```
+
+```{r, volcano}
+pal <- water_pal("logogradient", 25, type = "continuous")
+image(volcano, col = pal)
+```
+
+### Regions
+
+```{r, regions}
+water_pal("wbregions")
+```
+
+![](wbregions.png)
+
+> Can be used in conjunction with this regional map!
+
+### Tribal affairs
+
+```{r, opp}
+water_pal("tribalbanner")
+water_pal("tribalheader")
+```
+
+### Water data challenge
+
+```{r, water-data-challenge}
+water_pal("datasalmon")
+```
+
+```{r, salmon-plot}
+library("ggplot2")
+library("palmerpenguins")
+ggplot(penguins, aes(factor(species), fill=factor(sex))) +  geom_bar() +
+  scale_fill_manual(values = water_pal("datasalmon")) +
+  theme_bw()
+```
+
+### Drought
+
+Colors from the [US Drought Monitor](https://droughtmonitor.unl.edu/About/AbouttheData/DroughtClassification.aspx) classifications
+
+```{r, drought}
+water_pal("drought") 
+```

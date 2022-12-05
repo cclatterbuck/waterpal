@@ -1,0 +1,8 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+Makefile
+dev/
+raw_images/
+^README\.qmd$
+README.md
+wbregions.png
