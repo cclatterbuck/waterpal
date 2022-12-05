@@ -1,9 +1,9 @@
-README
+waterpal
 ================
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
 
-# waterpal: palettes for the California Water Boards
+# Palettes for the California Water Boards
 
 These are color palettes based on art and iconography from the
 California State Water Resources Control Board, USA. Code from
@@ -22,8 +22,6 @@ within the Water Boards) and we can make it happen.
 
 ``` r
 devtools::install_github("cclatterbuck/waterpal")
-#> Skipping install of 'waterpal' from a github remote, the SHA1 (227bb991) has not changed since last install.
-#>   Use `force = TRUE` to force installation
 ```
 
 ## Palette names

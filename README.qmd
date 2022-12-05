@@ -1,5 +1,5 @@
 ---
-title: "README"
+title: "waterpal"
 format: gfm
 editor: visual
 ---
@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# waterpal: palettes for the California Water Boards
+# Palettes for the California Water Boards
 
 These are color palettes based on art and iconography from the California State Water Resources Control Board, USA. Code from [Karthik](http://www.github.com/karthik)'s wesanderson package. Palettes were generated using mycolorpicker and mycolor.image.
 
@@ -23,7 +23,7 @@ These are color palettes based on art and iconography from the California State 
 
 ## Installation
 
-```{r}
+```{r, eval = FALSE}
 devtools::install_github("cclatterbuck/waterpal")
 ```
 
